@@ -1,6 +1,6 @@
 # yt-devmeetup-vue
 
-> A dev meetup applicatin built with Vue + Vuetify + Firebase
+A dev meetup application built with Vue + Vuetify + Firebase.
 
 ## Build Setup
 

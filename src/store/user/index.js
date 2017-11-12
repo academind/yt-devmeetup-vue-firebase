@@ -7,7 +7,7 @@ export default {
   mutations: {
     registerUserForMeetup (state, payload) {
       const id = payload.id
-      if (state.user.registeredMeetups.findIndex(meetup => meetup.id === id) >= 0) {
+      if (state.user.registeredMeetups.findIndex(meetup => meetup === id) >= 0) {
         return
       }
       state.user.registeredMeetups.push(id)
@@ -15,7 +15,7 @@ export default {
     },
     unregisterUserFromMeetup (state, payload) {
       const registeredMeetups = state.user.registeredMeetups
-      registeredMeetups.splice(registeredMeetups.findIndex(meetup => meetup.id === payload), 1)
+      registeredMeetups.splice(registeredMeetups.findIndex(meetup => meetup === payload), 1)
       Reflect.deleteProperty(state.user.fbKeys, payload)
     },
     setUser (state, payload) {

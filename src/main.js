@@ -18,11 +18,11 @@ new Vue({
   render: h => h(App),
   created () {
     firebase.initializeApp({
-      apiKey: 'AIzaSyA1c1UMOXzujqU3QFMiS7g0pjjwVR-CT-M',
-      authDomain: 'youtube-devmeetup.firebaseapp.com',
-      databaseURL: 'https://youtube-devmeetup.firebaseio.com',
-      projectId: 'youtube-devmeetup',
-      storageBucket: ''
+    apiKey: 'AIzaSyB6zVuk6lgucc_Xd2ufjQB1E9Mx9bQKERs',
+    authDomain: 'devmeetup-e83cd.firebaseapp.com',
+    databaseURL: 'https://devmeetup-e83cd.firebaseio.com',
+    projectId: 'devmeetup-e83cd',
+    storageBucket: 'devmeetup-e83cd.appspot.com'
     })
   }
 })
